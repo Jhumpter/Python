@@ -1,4 +1,2 @@
-anciao = input(': ')
-nome = input(': ')
-anciao += ', ' + nome
-print(anciao)
+frase = input('Frase')
+print(frase.count('a'))
