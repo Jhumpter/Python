@@ -1,3 +1,4 @@
+print('---- 1ª Pessoa ----')
 nome0 = input('Nome: ')
 idade0 = int(input('Idade: '))
 sexo0 = input('Sexo (M/F): ').title()
@@ -9,6 +10,7 @@ mulheres = 0
 if sexo0 == 'F' and idade0 < 20:
     mulheres += 1
 for c in range(1, 4):
+    print('---- {}ª Pessoa ----'.format(c + 1))
     nome = input('Nome: ')
     idade = int(input('Idade: '))
     sexo = input('Sexo (M/F): ').title()
