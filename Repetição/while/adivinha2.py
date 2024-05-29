@@ -3,7 +3,7 @@ pc = randint(0, 10)
 acertou = False
 c = 0
 while not acertou:
-    usuario = int(input('Adivinhe o número: '))
+    usuario = int(input('Adivinhe o número de 0 a 10: '))
     c += 1
     if usuario == pc:
         acertou = True
