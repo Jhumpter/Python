@@ -1,3 +1,4 @@
+from Projeto_Cadastro.Arquivo import funcoes
 def linha():
     print('-' * 30)
 def res(n):
@@ -7,10 +8,14 @@ def res(n):
         linha()
         print('{:^30}'.format('Pessoas Cadastradas'))
         linha()
+        funcoes.mostrar()
     if n == '2':
         linha()
         print('{:^30}'.format('Nova pessoa'))
         linha()
+        nome = input('Nome: ')
+        idade = input('Idade: ')
+        funcoes.adicionar(nome, idade)
     if n == '3':
         linha()
         print('{:^30}'.format('Finalizando programa'))
